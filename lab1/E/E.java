@@ -30,7 +30,7 @@ public class E{
 			int max = arr[0];
 			int res = Integer.MIN_VALUE;
 			for (i = 1; i < n; i++) {
-				//先更新差值，在更新最大值
+				//先更新差值，再更新最大值
 				res = max-arr[i]>res ? max-arr[i]:res; 
 				max = arr[i]>max? arr[i]:max;
 			}
